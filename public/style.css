@@ -1,0 +1,10 @@
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
+}
+
+#contain {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
