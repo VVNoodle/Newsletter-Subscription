@@ -1,13 +1,14 @@
 const $ = require("jquery");
 
 $('form').submit((event) => {
+    var userEmail = $('#email').val();
+    console.log(userEmail);
     event.preventDefault();
-    console.log("event called");
     $.ajax({
         url: '/',
         type: 'POST',
         data: {
-            email: 'ebisma@ucsc.edu'
+            email: userEmail
         },
         success: (response) => {
             console.log(response);
