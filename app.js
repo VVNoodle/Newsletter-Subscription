@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-// API Key: a76c33bd41aa20886eb678780671169c-us17 
-
 // Middleware
 app.use(express.static(__dirname + "/public"));
 
