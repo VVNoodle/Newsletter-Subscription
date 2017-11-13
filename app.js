@@ -4,8 +4,8 @@ const app = express();
 // Middleware
 app.use(express.static(__dirname + "/public"));
 
-app.get('/d', (req, res) => {
-    res.send("Hello der");
+app.post('/', (req, res) => {
+    res.send("success");
 });
 
 app.listen(3000, () => {
